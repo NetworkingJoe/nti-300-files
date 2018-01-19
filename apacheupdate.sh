@@ -6,4 +6,4 @@ systemctl start httpd                                                           
 
 sudo sed -i 's/^/#/g' /etc/httpd/conf.d/welcome.conf                                   #Commenting out welcome.conf
 
-sudo echo -e "<html> /n<h1> Welcome, NTI-300 </h1> /n<html>" > /var/www/html/index.html              #Creating our index.html
+sudo echo -e "<html> \n <h1> Welcome, NTI-300 </h1> \n </html>" > /var/www/html/index.html              #Creating our index.html
