@@ -1,0 +1,42 @@
+"This is a detailed instruction section on how to write an instance in gcloud by following the steps below."
+
+1)Create a google cloud student account using a link provided by the instructor, if link isn't available e-mail theinstructor for a new link. ***Remember to register using your student Gmail account***
+
+2)Once this is done, you should navigate your way to the dashboard.
+
+3)Click on the compute engine section under Resources, and if this does not exist then you want to go to the top   left and click on the three lines, and move the cursor over compute engine>then click VM instances
+
+4)Click the CREATE INSTANCE button at the top.
+
+5)Name the instance under name.
+
+6)Under machine type, click the down arrow where it shows "1vCPU" and change this to "micro (1 shared vCPU) 
+
+7)Under Boot disk, click change, and select CENTOS7
+
+8)Under Firewall, click the empty box to Allow HTTP traffic, and Allow HTTPS
+
+9)If you are more advanced, you can click on the two blue downward facing arrows titled Management, disks, networking, SSH keys and add a startup script, and more options otherwise just click create.
+
+10)You can launch your instance by finding your named instance, and clicking on the letters SSH which is located under the connect tab.
+
+11)Congratulations, you have just created an instance. 
+
+
+YAYYYYYY !!!!!!!
+
+.................!!!.
+................!!!!.
+................!!!!.
+...........!!!!!!!!!.
+..........!!!!!!!!!!.
+.........!!!!!!!!!!!.
+.........!!!!!!!!!!!.
+.........!!!!!!!!!!!.
+..........!!!!!!!!!!.
+...........!!!!!!!!!.
+............!!!!!!!!.
+
+
+
+
