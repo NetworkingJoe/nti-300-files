@@ -7,5 +7,5 @@
 # # │ │ │ │ │
 # # │ │ │ │ │
 # # * * * * *
-# 18,0 * * * * /usr/bin/echo "hello world"
-# 30 * * * * /home/paulierev1775/nti-300-files/apacheupdate.sh
+18,0 * * * * /usr/bin/echo "hello world"
+0,15,30,45 * * * * /home/paulierev1775/nti-300-files/apacheupdate.sh
