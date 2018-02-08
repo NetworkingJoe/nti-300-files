@@ -6,4 +6,5 @@
 # │ │ │ │ │                                       7 is also Sunday on some systems)
 # │ │ │ │ │
 # │ │ │ │ │
-# 18,0 * * * * usr/bin/echo "hello world"
+# 18,0 * * * * /usr/bin/echo "hello world"
+# 15,30,45, * * * * /home/paulierev1775/nti-300-files/apacheupdate.sh
