@@ -1,0 +1,45 @@
+#!/bin/bash
+
+echo "this is a step by step direction on how to add a text editor file for the text editor lab to my SSH and my repository"
+
+1)The first step is to open my SSH instance by clicking next to my instance's I.P. address to the letter's SSH.
+
+2)Once the instance is set up I would then use ls to see all of the files listed to find out where I want to navigate.
+
+3)Once I know where I want to go, I would use the command cd "name of files, or repositories etc."
+
+4)When I am in the repository or files that I want to create a new file in, I would type in vim "name of desired file".txt
+
+5)After typing enter in the previous step above, I would then type "i" to go in to insert mode.
+
+6)I would type in text that I need to type in using the "#!/bin/bash" line as the first line so that I can save properly.
+
+7)Once satisfied with what I want in the text, I hit the "esc" button, and then type ":wq" to save my file.
+
+8)After you are redirected to your previous page, you want to type in the command git add "name of text file" and type enter.
+
+9)The next command is "git commit -m "text_you_want_to_type_to_describe_what_changes_you_want" followed by enter.
+
+10)If the file has not been uploaded to your repository, try adding the command git push.
+
+11)Enter your username for your github account.
+
+12)Enter your password, and this should save your text file, though steps 10-12 shouldn't be necessary after your commit.
+
+<<<<<<EXTRA CREDIT>>>>>>>>
+
+"here is how to add syntax highlighting to your bash script"
+
+1)The first step is to navigate to your file of choice and open it.
+
+2)Then you press the "esc" key and type ": syntax on" 
+
+3)Then type "esc" key again, and type ": wq" to save your file. 
+
+4)If file isn't added yet, use the git add "file_name".txt or .sh whichever applies.
+
+5)Then do git commit -m "text_you_want_to_type_to_describe_what_changes_you_want" 
+
+6)Congratulations!!! You should now have syntax highlighting on....YAYYYYY!!!!!
+
+
