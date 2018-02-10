@@ -12,7 +12,7 @@ echo "this is a step by step direction on how to add a text editor file for the 
 
 5)After typing enter in the previous step above, I would then type "i" to go in to insert mode.
 
-6)I would type in text that I need to type in using the "#!/bin/bash" line as the first line so that I can save properly.
+6)I would type in text that I need to type in using the "#!/bin/bash" line as the first line, and echo "hello world" in the second line so that I can save properly.
 
 7)Once satisfied with what I want in the text, I hit the "esc" button, and then type ":wq" to save my file.
 
