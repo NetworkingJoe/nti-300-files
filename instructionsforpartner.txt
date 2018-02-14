@@ -16,7 +16,14 @@
 
 8)Under Firewall, click the empty box to Allow HTTP traffic, and Allow HTTPS
 
-9)If you are more advanced, you can click on the two blue downward facing arrows titled Management, disks, networking, SSH keys and add a startup script, and more options otherwise just click create.
+9)If you are more advanced, you can click on the two blue downward facing arrows titled Management, disks, networking, SSH keys
+and add a startup script. This would look like the next line:
+
+#!/bin/bash 
+echo -e "<html> "Add_in_your_details_here_without_quotations!"  \n</html>" > /var/www/html/index.html
+
+Finish the step with the directions below.
+and more options otherwise just click create.
 
 10)You can launch your instance by finding your named instance, and clicking on the letters SSH which is located under the connect tab.
 
