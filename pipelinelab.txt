@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "This is a script created solely for the Pipeline lab, 
+
+walking you through how to create a script or set of linked
+
+commands in bash, how to test them without executing them,&
+
+how to turn them into a script."
+
+
