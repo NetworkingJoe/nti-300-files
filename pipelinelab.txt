@@ -1,11 +1,18 @@
-#!/bin/bash
+# "This is a script created solely for the Pipeline lab, 
 
-echo "This is a script created solely for the Pipeline lab, 
+# walking you through how to create a script or set of linked
 
-walking you through how to create a script or set of linked
+# commands in bash, how to test them without executing them,&
 
-commands in bash, how to test them without executing them,&
+# how to turn them into a script."
 
-how to turn them into a script."
+# 1) The first step in automating your script is to create an automation that 
 
+# will run on a webpage based on your desired plan. You would do this using the 
 
+# following lines
+
+#!/bin/bash 
+echo -e "<html> "Add_in_your_details_here_without_quotations!"  \n</html>" > /var/www/html/index.html
+
+#2) Then you would 
