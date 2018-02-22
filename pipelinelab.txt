@@ -1,18 +1,34 @@
 # "This is a script created solely for the Pipeline lab, 
 
-# walking you through how to create a script or set of linked
+#  walking you through how to create a script or set of linked
 
-# commands in bash, how to test them without executing them,&
+#  commands in bash, how to test them without executing them,&
 
-# how to turn them into a script."
+#  how to turn them into a script."
 
-# 1) The first step in automating your script is to create an automation that 
+# 1) Here's the basics. First open up to the file of your choice in where you
+want to store your new script using your instance, and then create a file using vim "filename".txt or vim "filename".sh and then from there after pressing enter, you type I for insert so you can write your script.
 
-# will run on a webpage based on your desired plan. You would do this using the 
+# The first lines in automating your script so that it will run on a webpage using yourdesired plan is done using the following lines:
 
-# following lines
-
-#!/bin/bash 
+#!/bin/bash
 echo -e "<html> "Add_in_your_details_here_without_quotations!"  \n</html>" > /var/www/html/index.html
+ 
+#2) Then you would go to the next line and you could add in any text of you choosing.
 
-#2) Then you would 
+# This typically means that you would type in notes using the # symbol prior to every
+new line like is shown in this script so that it is a comment. You can also write lines with executable commands, or linked commands. This typically looks like the following:
+
+# cat $filename1 $filename2 | grep $search_word
+
+# What that does is takes your first file and copies it into your second folder using
+the filter of grep which will search filename2 for filename1 using whatever search
+word you give it. In other words if I wanted to find filename1 in filename2, using 
+a search, I would see that filename1 is located in filename2 using the command 
+cat filename2 or using the search word.
+
+#3) This still doesn't make sense to me so I will keep it simple, we create our script,however we want based on the above comments. When you are ready to save the file you   would press the esc button, and the hold shift and press the semicolon key to create a colon and type enter. Follow this up finally by typing wq and press enter. What this   does now saves your new file.
+
+#4) Congrats, you have now just created your script, but you aren't done, you need to  execute the command: git add "filename_without_quotations" and type enter. Then type   git commit -m "comment_what_your_file_is_or_what_changes_you_made_here_with_quotations"and type enter. The last step is backup your file and your committed changes by pushingit to your repository using the command: git push and then type enter, enter your user name and your password.
+
+#5) You have successfully created a script. We will now explore how to test the file   without executing it. The first step is to go to the folder you want to check and then type bash -n "scriptname"
