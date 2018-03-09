@@ -1,0 +1,23 @@
+#!/bin/bash
+yum install -y python-pip
+pip install virtualenv
+pip install --upgrade pip
+mkdir /opt/django
+cd /opt/django
+python --version
+yum install -y python34 python-pip
+virtualenv -p python3 django
+cd django
+ls
+source bin/activate
+python --version
+pip install django
+django-admin --version
+django-admin startproject project1
+cd ..
+cd ..
+chown -R paulierev1775 /opt/django/django
+ls -l
+sudo -u paulierev1775 -E sh -c "/opt/django/django/bin/python /opt/django/django/project1/manage.py runserver 0.0.0.0:8000&"
+source bin/activate
+yum install -y git
