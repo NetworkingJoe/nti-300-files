@@ -1,0 +1,52 @@
+#!/usr/bin/python
+
+"""
+This is how I type up comments in python. By putting triple brackets before
+and after comments unlike bash, which uses a # symbol every line.
+"""
+
+"""
+The import line imports whatever you tell it to. In the import sys module line
+imports the specific parameters and functions, and provides access to variables
+used or maintained by the interpreter. In the import re line it imports 
+any regular expressions in python.
+"""
+
+import sys
+import re
+
+suits = {
+	'Bashful':'yellow', 'Sneezy':brown', 'Doc':'orange', 'Grumpy':'red',
+	'Dopey':'green', 'Happy':'blue', 'Sleepy':'taupe'
+}
+
+
+
+"""
+The Variable Suits stores the names of each dwarf and their suit color they wear.
+In this dictionary, the key is the name of the dwarf, and the value is the color 
+identified as a string in the code.
+"""
+
+
+
+pattern = re.compile("(%s)" % sys.argv[1])
+
+
+
+"""
+The for argument below states that for every dwarf list their color in suits, however,
+if the search for the pattern or pattern color returns true, then return the phrase 
+"the dwarf suit is (followed by the name of the color)." And if the color does not match
+at all, then the else statement says to return the phrase "No dwarves or dwarf suits 
+matched the pattern." and this prints out as your result when the code is run.
+"""
+
+
+for dwarf, color in suits.items():
+	if pattern.search(dwarf) or pattern.search(color):
+		print("%'s dwarf suit is %s." %
+			(pattern.sub(r"_\1_", dwarf), pattern.sub(r"_\1_", color)))
+		break
+else:
+	print("No dwarves or dwarf suits matched the pattern.")
