@@ -16,8 +16,7 @@ import sys
 import re
 
 suits = {
-	'Bashful':'yellow', 'Sneezy':brown', 'Doc':'orange', 'Grumpy':'red',
-	'Dopey':'green', 'Happy':'blue', 'Sleepy':'taupe'
+	'Bashful':'yellow', 'Sneezy':brown', 'Doc':'orange', 'Grumpy':'red', 'Dopey':'green', 'Happy':'blue', 'Sleepy':'taupe'
 }
 
 
