@@ -44,8 +44,8 @@ matched the pattern." and this prints out as your result when the code is run.
 
 for dwarf, color in suits.items():
 	if pattern.search(dwarf) or pattern.search(color):
-		print("%'s dwarf suit is %s." %
-			(pattern.sub(r"_\1_", dwarf), pattern.sub(r"_\1_", color)))
+		print("%s's dwarf suit is %s." %
+		      (pattern.sub(r"_\1_", dwarf), pattern.sub(r"_\1_", color)))
 		break
 else:
 	print("No dwarves or dwarf suits matched the pattern.")
